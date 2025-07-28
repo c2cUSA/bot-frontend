@@ -1,0 +1,107 @@
+/* frontend/src/App.css */
+.App {
+  text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.status-card {
+  border: 1px solid #61dafb;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px;
+  min-width: 400px;
+}
+
+.status-active { color: #00ff7f; /* Green */ }
+.status-idle { color: #f0e68c; /* Khaki */ }
+
+.controls button {
+  font-size: 1rem;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: #61dafb;
+  color: #282c34;
+  font-weight: bold;
+}
+
+.controls button:disabled {
+  background-color: #555;
+  color: #888;
+  cursor: not-allowed;
+}
+
+.error-message {
+    color: #ff4d4d;
+    margin-top: 20px;
+}
+
+nav {
+    margin-bottom: 20px;
+}
+
+nav button {
+    background: none;
+    border: 1px solid #61dafb;
+    color: #61dafb;
+    padding: 10px 15px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+nav button:hover {
+    background: #61dafb20;
+}
+
+.user-manager {
+  width: 100%;
+  max-width: 800px;
+  margin-top: 20px;
+}
+
+.user-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #444;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #333;
+}
+
+.delete-btn {
+  background-color: #e53e3e;
+  color: white;
+}
+.delete-btn:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+}
+.logout-btn {
+  border-color: #e53e3e;
+  color: #e53e3e;
+}
+.success-message {
+  color: #38a169;
+}
